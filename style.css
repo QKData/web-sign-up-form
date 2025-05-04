@@ -1,0 +1,115 @@
+@font-face {
+    font-family: 'Norse-Bold';
+    src: url('material/Norse-Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.container {
+    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header {
+    flex: 1;
+    background-image: url('/material/halie-west-25xggax4bSA-unsplash.jpg');
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    color: #f5f5f5
+}
+
+footer {
+    margin-top: auto;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+.header-box img {
+    height: 100%; /* Adjust height to desired size */
+    object-fit: contain; /* Ensure the image fits within the box */
+}
+
+.header-box {
+    color: #FFFFFF;
+    display: flex; /* Use flexbox for centering */
+    align-items: center; /* Center vertically */
+    justify-content: center;
+    width: 100%; /* Adjust width to match the logo size */
+    height: 100px; /* Adjust height to match the logo size */
+    background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent dark background */
+    font-size: 80px;
+    font-family: 'Norse-Bold';
+    margin-top: 40%;
+}
+
+.content {
+    flex: 2;
+    background-color: #f5f5f5;
+    shadow
+}
+
+.action {
+    width: 100%;
+    background-color: #f5f5f5;
+    margin: 0 -2%; /* Negate the padding applied by the parent form */
+    padding-left: 2%; /* Ensure no additional padding is applied */
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.text {
+    padding-left: 2%;
+}
+
+.form {
+    background-color: #FFFFFF;
+    padding-left: 2%;
+}
+
+.form-group {
+    flex: 1 1 calc(50% - 20px); /* Each field takes 50% of the width minus the gap */
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    width: 100%; /* Input fields stretch to fill their container */
+    max-width: 300px;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+button {
+    flex: 1 1 100%; /* Button spans the full width */
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 20px;
+    background-color: #596D48;
+    color: #FFFFFF;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+input:invalid {
+    border: 2px solid red; /* Highlight invalid fields with a red border */
+    background-color: #ffe6e6; /* Light red background for invalid fields */
+}
+
+input:focus {
+    border: 2px solid blue; /* Highlight focused fields with a blue border */
+    outline: none; /* Remove the default outline */
+    background-color: #e6f7ff; /* Light blue background for focused fields */
+}
+
